@@ -7,6 +7,22 @@ import { shoes, statistics } from "../constants";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
+  // const [count, setCount] = useState(0);
+  //{count >= stat.value ? stat.value : count}
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     const index = statistics.findIndex((stat) => count < stat.value);
+
+  //     if (index !== -1) {
+  //       setCount((prevCount) => prevCount + 1);
+  //     } else {
+  //       clearInterval(interval);
+  //     }
+  //   }, 0);
+
+  //   return () => clearInterval(interval);
+  // }, [count]);
+
   return (
     <section
       id="home"
@@ -56,7 +72,9 @@ const Hero = () => {
               <ShoeCard
                 index={index}
                 imageURL={shoe}
-                changeBigShoeImage={(shoe) => {setBigShoeImg(shoe)}}
+                changeBigShoeImage={(shoe) => {
+                  setBigShoeImg(shoe);
+                }}
                 bigShoeImg={bigShoeImg}
               />
             </div>

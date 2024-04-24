@@ -1,9 +1,9 @@
 # Nike website
 
-Brief description or introduction of the project.
-
+This project aims to recreate the user interface and experience of the Nike website using React.js and Tailwind CSS.
 
 ## Link
 
-[](https://nike-tailwind-react-js.vercel.app/)
+You can view the project live [here](https://nike-tailwind-react-js.vercel.app/).
+
 
